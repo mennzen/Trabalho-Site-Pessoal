@@ -1,0 +1,288 @@
+/* Reset e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dcdcdc; /* Fundo escuro atrás do currículo para destacar a "folha" */
+    color: #222;
+    line-height: 1.5;
+    padding: 40px 20px;
+}
+
+/* Container Principal (A Folha do Currículo) */
+.resume-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    overflow: hidden; /* Mantém as bordas limpas */
+}
+
+/* Header Estilo Currículo (Azul Acinzentado) */
+.resume-header {
+    background-color: #607384; 
+    color: white;
+    padding: 50px 40px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza texto e colunas */
+}
+
+.header-info h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.header-details {
+    display: flex;
+    gap: 60px;
+    text-align: center;
+}
+
+.detail-group h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail-group p {
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* Layout do Corpo (Dividido em Duas Cores) */
+.resume-body {
+    display: flex;
+    min-height: 800px;
+}
+
+/* Sidebar (Esquerda - Cinza Claro) */
+.sidebar {
+    width: 38%;
+    background-color: #f2f2f2;
+    padding: 40px 30px;
+}
+
+/* Estilo unificado para os H2 (Serifado, espaçado, centralizado/alinhado à esquerda) */
+.sidebar h2, .main-content h2 {
+    font-family: 'Georgia', serif; /* Fonte serifada para bater com a imagem */
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 35px;
+    color: #111;
+}
+
+.sidebar section:first-child h2 {
+    margin-top: 0;
+}
+
+/* Lista de Contato */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.contact-list i {
+    font-size: 1.1rem;
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    color: #333;
+}
+
+.at-symbol {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 25px;
+    text-align: center;
+    margin-right: 10px;
+    color: #333;
+    display: inline-block;
+}
+
+.contact-list a {
+    color: #222;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Formação */
+.education-section h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.sidebar .date {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #444;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.education-section .desc {
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* Skills */
+.skills-extra ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.skills-extra li {
+    position: relative;
+    padding-left: 15px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.skills-extra li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Conteúdo Principal (Direita - Branco) */
+.main-content {
+    width: 62%;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.main-content h2 {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.exp-header h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.date-right {
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.company {
+    color: #333;
+    text-decoration: underline;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+}
+
+.exp-list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.exp-list li {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    padding-left: 15px;
+    line-height: 1.6;
+}
+
+.exp-list li::before {
+    content: "*";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    body { padding: 0; }
+    .resume-wrapper { box-shadow: none; border-radius: 0; }
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .header-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .resume-body {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .exp-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

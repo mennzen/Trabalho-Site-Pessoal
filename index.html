@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Menzen Piovesan | Currículo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #d3d3d3; 
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            color: #222;
+        }
+
+        .resume-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        header {
+            background-color: #5c7181; 
+            color: #ffffff;
+            padding: 40px 50px;
+            display: flex;
+            align-items: center; 
+            gap: 40px; 
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            object-fit: cover;
+            flex-shrink: 0;
+            background-color: #a0a0a0;
+        }
+
+        .header-info {
+            flex-grow: 1;
+            text-align: center; 
+        }
+
+        .header-info h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        .header-skills {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .skills-column h3 {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .skills-column p {
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        .resume-body {
+            display: flex;
+            min-height: 800px;
+        }
+
+        .section-title {
+            font-family: 'Georgia', serif;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #111;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .left-column {
+            width: 38%;
+            background-color: #f4f4f4; 
+            padding: 40px 30px;
+        }
+
+        .left-column .section-title {
+            text-align: center;
+            margin-top: 35px;
+        }
+        
+        .left-column section:first-child .section-title { margin-top: 0; }
+
+        .contact-list {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .contact-icon {
+            width: 25px;
+            font-size: 18px;
+            margin-right: 10px;
+            text-align: center;
+            color: #222;
+        }
+
+        .contact-list a { color: #111; text-decoration: underline; }
+
+        .education-title { font-size: 15px; font-weight: 700; margin-bottom: 5px; }
+        .education-date { font-size: 11px; font-weight: 700; color: #333; margin-bottom: 15px; text-transform: uppercase; }
+        .education-desc { font-size: 13px; line-height: 1.6; margin-bottom: 40px; }
+
+        .skills-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .right-column {
+            width: 62%;
+            background-color: #ffffff;
+            padding: 40px 40px;
+        }
+
+        .right-column .section-title { text-align: left; }
+
+        .job-header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+
+        .job-title { font-size: 18px; font-weight: 700; color: #111; }
+        .job-date { font-size: 11px; font-weight: 700; color: #111; text-transform: uppercase; }
+        
+        .company-line { font-size: 14px; text-decoration: underline; margin-bottom: 2px; color: #333; }
+
+        .job-tasks { list-style: none; margin-top: 25px; }
+        .job-tasks li {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 15px;
+            color: #222;
+        }
+        .job-tasks li::before {
+            content: "*";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <header>
+            <img src="fotoTrabalho.jpeg" alt="Guilherme Menzen Piovesan" class="profile-pic">
+            
+            <div class="header-info">
+                <h1>Guilherme Menzen Piovesan</h1>
+                <div class="header-skills">
+                    <div class="skills-column">
+                        <h3>COMPETÊNCIAS</h3>
+                        <p>Python<br>Suporte de TI</p>
+                    </div>
+                    <div class="skills-column">
+                        <h3>IDIOMAS</h3>
+                        <p>English<br>Portuguese</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="resume-body">
+            
+            <aside class="left-column">
+                <section>
+                    <h2 class="section-title">CONTATO</h2>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-envelope contact-icon"></i> menzenguilherme@gmail.com</li>
+                        <li><i class="fa-solid fa-phone contact-icon"></i> (54) 984095940</li>
+                        <li><i class="fa-solid fa-at contact-icon"></i> <a href="https://linkedin.com/in/guilherme-menzen-ab7a26354" target="_blank">linkedin.com/in/guilherme-menzen-ab7a26354</a></li>
+                        <li><i class="fa-solid fa-at contact-icon"></i> <a href="https://github.com/mennzen" target="_blank">https://github.com/mennzen</a></li>
+                        <li><i class="fa-solid fa-location-dot contact-icon"></i> Passo Fundo, Rio Grande do Sul,<br>Brasil</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="section-title">FORMAÇÃO</h2>
+                    <h3 class="education-title">Ciência da computação - ATITUS Educação, Passo Fundo</h3>
+                    <p class="education-date">ABRIL 2026 - ATUAL</p>
+                    <p class="education-desc">Atualmente cursando Ciência da Computação, desenvolvendo conhecimentos sólidos em lógica de programação, algoritmos, estrutura de dados, Python, Java, HTML, CSS e Cybersecurity.</p>
+                </section>
+
+                <section>
+                    <h2 class="section-title">SKILLS | EXTRAS</h2>
+                    <ul class="skills-list">
+                        <li>Certificado de Fluência em Inglês pelo curso CCAA</li>
+                        <li>Prova TOEFL realizada</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="right-column">
+                <h2 class="section-title">EXPERIÊNCIA</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <h3 class="job-title">Assistente de TI e Vendedor</h3>
+                        <span class="job-date">JAN 2022 - JUL 2025</span>
+                    </div>
+                    <p class="company-line"><a href="#" style="color:#333;">Versatyl Modas, Paim Filho</a></p>
+                    <p class="company-line"><a href="#" style="color:#333;">Assistente de TI, Secretaria de Finanças, Passo fundo</a></p>
+                    
+                    <ul class="job-tasks">
+                        <li>Suporte técnico de primeiro e segundo nível para usuários internos, incluindo configuração de computadores, impressoras, rede e sistemas administrativos.</li>
+                        <li>Manutenção preventiva e corretiva de hardware e software utilizados na empresa, minimizando o tempo de inatividade dos sistemas.</li>
+                        <li>Experiência em comunicação e vendas buscando atender e satisfazer o cliente garantindo sua fidelização.</li>
+                    </ul>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>
